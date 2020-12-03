@@ -77,6 +77,7 @@ tabsetPanel(              # <-----------
 
 Ahora hay que agregar la información que desplegará cada una de esas pestañas en el archivo **`server.R`**
 
+```R
 library(shiny)
 
 shinyServer(function(input, output) {
@@ -104,4 +105,4 @@ shinyServer(function(input, output) {
                                     
        
 })
-
+```
