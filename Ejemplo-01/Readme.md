@@ -18,6 +18,10 @@ Lo primero que se debe hacer es generar un arhivo Shiny Web App en RStudio
 
 ![image](1.1.png)
 
-Hay que colocar un nombre de nuestro proyecto y 
+Hay que colocar un nombre de nuestra Web App, además de seleccionar multiple file (esto creará dos archivos ui.R y server.R) y la ruta donde se almacenará 
 
-![image](1.2.png)
+![](1.2.png)
+
+Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface), se establece la visualización de nuestro Dashboar o reporte, y en el Serve se establecen las variables de entrada y salida. Para ejecutar la Web App con dar clic en `Run App` bastará.
+
+![](1.3.png)
