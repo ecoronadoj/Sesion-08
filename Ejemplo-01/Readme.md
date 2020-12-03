@@ -22,9 +22,11 @@ Hay que colocar un nombre de nuestra Web App, además de seleccionar multiple fi
 
 ![](1.2.png)
 
+
 Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface), se establece la visualización de nuestro Dashboar o reporte, y en el Serve se establecen las variables de entrada y salida. Para ejecutar la Web App con dar clic en `Run App` bastará. Los archivos por default tienen un ejemplo precargado el podría servir como base para ajustarlo a las necesidades de cada usuario
 
 ![](1.3.png)
+
 
 En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente, ejecuta el ejemplo, intenta mover los parámetros para que observes el resultado tato dentro del archivo ui.R y de la webApp.
 
@@ -41,6 +43,7 @@ shinyUI(
 )
 ```
 
+
 En el archivo `ui.R`, dentro de la fución `shinyUI` colocaremos las siguientes instrucciones para poder visualizar las partes de nuesta webApp, posteriormente ejecuta el código para que observes el resultado y puedas ubicar donde se localiza gráficamente cada sentencia
 
 ```R
@@ -56,7 +59,10 @@ shinyUI(
 )
 ```
 
-Con lo anterior ya pudiste observar la distrubución de los objetos dentro de la webApp. Ahora vamos a crear una donde se puedam observar algunas gráficas de dispersión para las variables del dataset `mtcars`. Dentro del archivo **`ui.R`** realiza los siguientes cambios
+
+Con lo anterior ya pudiste observar la distrubución de los objetos dentro de la webApp. Ahora vamos a crear una donde se puedam observar algunas gráficas de dispersión para las variables del dataset `mtcars`. 
+
+En el archivo **`ui.R`** realiza los siguientes cambios
 
 ```R
 library(shiny)
@@ -76,3 +82,15 @@ shinyUI(
         )
 ```
  
+Ahora en el archivo **`server.R`**, debes borrar todos los comentarios, de tal modo que quede de la siguiente forma, el código siguiente define los argumentos de `imput` y `output` qué se visualizaran en la *UI*, en este caso se harán los gráficos correlación entre `mpg` y el resto de variables de `mtcars` 
+
+```R
+library(shiny)
+
+shinyServer(function(input, output) { 
+    output$output_text <- renderText(paste("Grafico de mpg ~ ", input$x))
+    output$output_plot <- renderPlot(plot(as.formula(paste("mpg~", input$x)), 
+                                          data = mtcars))
+                                    }
+            )
+```
