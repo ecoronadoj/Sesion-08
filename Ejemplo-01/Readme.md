@@ -28,4 +28,6 @@ Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface
 
 En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente
 
-![](1.4.png)
+<p align="center">
+<img src="1.4.png" width="650" height="450"> 
+</p>
