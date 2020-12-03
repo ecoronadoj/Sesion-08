@@ -26,8 +26,53 @@ Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface
 
 ![](1.3.png)
 
-En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente
+En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente, ejecuta el ejemplo, intenta mover los parámetros para que observes el resultado tato dentro del archivo ui.R y de la webApp.
 
 <p align="center">
 <img src="1.4.png" width="650" height="450"> 
 </p>
+
+A continuación se creará una webApp desde cero, se deben borrar todos los comentarios para dejar solamente las siguientes líneas de código
+
+```R
+library(shiny)
+shinyUI(
+
+)
+```
+
+En el archivo `ui.R`, dentro de la fución `shinyUI` colocaremos las siguientes instrucciones para poder visualizar las partes de nuesta webApp, posteriormente ejecuta el código para que observes el resultado y puedas ubicar donde se localiza gráficamente cada sentencia
+
+```R
+library(shiny)
+shinyUI(
+    pageWithSidebar(
+    
+        headerPanel("Este es el header panel"),
+        sidebarPanel("Este es el sidebar panel"),
+        mainPanel("Este es el main panel")
+    
+    )
+)
+```
+
+Con lo anterior ya pudiste observar la distrubución de los objetos dentro de la webApp. Ahora vamos a crear una donde se puedam observar algunas gráficas de dispersión para las variables del dataset `mtcars`. Dentro del archivo **`ui.R`** realiza los siguientes cambios
+
+```R
+library(shiny)
+shinyUI(
+    
+    pageWithSidebar(
+        headerPanel ("Aplicacion simple con Shiny"),
+        sidebarPanel (
+            p("Vamos a crear plots con el dataset de 'mtcars'"),
+            selectInput("x", "Selecciona el eje de las X",
+                        choices = colnames(mtcars) )
+                    ),
+        mainPanel (h3(textOutput("output_text")), 
+                   plotOutput("output_plot")
+                   )
+                  )
+        )
+```
+ 
