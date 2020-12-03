@@ -109,4 +109,4 @@ shinyServer(function(input, output) {
 
 El resultado final es algo similar a lo siguiente
 
-<img src="imagenwa/2.1.png" width="650" height="450">
+<img src="imagenes/2.1.png" width="790" height="450">
