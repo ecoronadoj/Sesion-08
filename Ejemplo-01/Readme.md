@@ -16,3 +16,4 @@ Durante esta sesión serás capaz de realizar una webApp con el uso de la librer
 
 Lo primero que se debe hacer es generar un arhivo Shiny Web App en RStudio
 
+![image](1.png)
