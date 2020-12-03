@@ -16,11 +16,11 @@ Durante esta sesión serás capaz de realizar una webApp con el uso de la librer
 
 Lo primero que se debe hacer es generar un arhivo Shiny Web App en RStudio
 
-![image](1.1.png)
+![image](imagenes/1.1.png)
 
 Hay que colocar un nombre de nuestra Web App, además de seleccionar multiple file (esto creará dos archivos ui.R y server.R) y la ruta donde se almacenará 
 
-![](1.2.png)
+![](imagenes/1.2.png)
 
 
 Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface), se establece la visualización de nuestro Dashboar o reporte, y en el Serve se establecen las variables de entrada y salida. Para ejecutar la Web App con dar clic en `Run App` bastará. Los archivos por default tienen un ejemplo precargado el podría servir como base para ajustarlo a las necesidades de cada usuario
@@ -31,7 +31,7 @@ Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface
 En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente, ejecuta el ejemplo, intenta mover los parámetros para que observes el resultado tato dentro del archivo ui.R y de la webApp.
 
 <p align="center">
-<img src="1.4.png" width="650" height="450"> 
+<img src="imagenes/1.4.png" width="650" height="450"> 
 </p>
 
 A continuación se creará una webApp desde cero, se deben borrar todos los comentarios para dejar solamente las siguientes líneas de código
