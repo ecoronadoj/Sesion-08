@@ -22,6 +22,10 @@ Hay que colocar un nombre de nuestra Web App, además de seleccionar multiple fi
 
 ![](1.2.png)
 
-Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface), se establece la visualización de nuestro Dashboar o reporte, y en el Serve se establecen las variables de entrada y salida. Para ejecutar la Web App con dar clic en `Run App` bastará.
+Una vez hecho esto, tendremos los dos archivos creados, en el UI (User interface), se establece la visualización de nuestro Dashboar o reporte, y en el Serve se establecen las variables de entrada y salida. Para ejecutar la Web App con dar clic en `Run App` bastará. Los archivos por default tienen un ejemplo precargado el podría servir como base para ajustarlo a las necesidades de cada usuario
 
 ![](1.3.png)
+
+En la siguiente imágen podemos apreciar el ejemplo indicado anteriormente
+
+![](1.4.png)
