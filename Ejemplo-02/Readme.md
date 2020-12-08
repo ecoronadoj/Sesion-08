@@ -58,15 +58,15 @@ tabsetPanel(              # <-----------
                  plotOutput("output_plot"),
                  ),
         
-        tabPanel("imágenes",  #Pestaña de imágenes
+        tabPanel("imágenes",  #Pestaña de imágenes <-----------
                  img( src = "cor_mtcars.png", 
                       height = 450, width = 450)
                 ), 
         
         #Aprovehamos y agregamos las siguientes pestañas # <-----------
-        tabPanel("Summary"),
-        tabPanel("Table"),
-        tabPanel("Data Table")
+         tabPanel("Summary", verbatimTextOutput("summary")),    # salida del Summary <-----------
+         tabPanel("Table", tableOutput("table")),               # salida de la tabla <-----------
+         tabPanel("Data Table", dataTableOutput("datatable"))   # salida del data table <-----------
     )
 )
 )
@@ -107,6 +107,7 @@ shinyServer(function(input, output) {
 })
 ```
 
-El resultado final es algo similar a lo siguiente
+
+El resultado final es algo similar a lo siguiente, se puede apreciar el data table donde se pueden realizar filtros simultáneos. 
 
 <img src="imagenes/2.1.png" width="790" height="450">
