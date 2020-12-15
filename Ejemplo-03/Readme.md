@@ -38,7 +38,7 @@ shinyUI(fluidPage(
 ))
 ```
 
-Para el archivo `Server.R`
+Para el archivo `Server.R` pega el siguiente código, además trata de identificar que hacen cada uno de los comandos que se presentan a continuación:
 
 ```R 
 # Generación de un dashboard de tipo de selección Dinámica
@@ -80,3 +80,4 @@ shinyServer(function(input, output) {
     })
 
 ```
+Ejecuta la webApp
