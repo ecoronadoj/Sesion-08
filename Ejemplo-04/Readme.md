@@ -1,12 +1,17 @@
 # Ejemplo 4. Dashboard condicional
 
-#### Objetivo}
+#### Objetivo.
+
+Desarrollar un dashboard de tipo condicional para la selección de dos tipos de gráficas.
 
 #### Requisitos
+- Libreria Shiny
+- Manejo de data frames
+- haber realzado los ejemplos anteriores
 
 #### Desarrollo
 
-Para el archivo `ui.R` utilizar el siguiente código
+Ahora lo que tendrás que hace es dentro del archivo `ui.R` utilizar el siguiente código
 
 ```R
 #Condicional
@@ -43,7 +48,7 @@ shinyUI(fluidPage(
 )
 ```
 
-Dentro del archivo `Server.R` pegar el siguiente código
+Dentro del archivo `Server.R` pegar el siguiente código y analizar que función desempeñan los inputs en este caso
 
 ```R
 #Condicional
