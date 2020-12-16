@@ -1,5 +1,15 @@
 # Ejemplo 5
 
+#### Objetivo
+- Generar un dashboard interactivo que tenga una presentación profesional y que pueda interactur con varias variables
+
+#### Requisitos
+- haber realizados los ejercicios anteriores
+- tener las librerias `shiny` y `shinydashboard`
+- Analizar el código siguiente
+
+#### Desarrollo
+Se comenzará utilizando el código siguiente ahora en un solo archivo `app.R` a diferencia de los ejemplos anteriores esta webApp se correra en un sólo fichero para que puedas observar la diferencia entre ambas formas de realizar las webApps.
 
 ```R
 ## app.R ##
