@@ -21,6 +21,7 @@ library(shinydashboard)
 #install.packages("shinythemes")
 library(shinythemes)
 
+#Esta parte es el análogo al ui.R
 ui <- 
     
     fluidPage(
@@ -99,6 +100,8 @@ ui <-
     )
 )
 )
+
+#De aquí en adelante es la parte que corresponde al server
 
 server <- function(input, output) {
 library(ggplot2)
