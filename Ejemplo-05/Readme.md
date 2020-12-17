@@ -148,4 +148,4 @@ shinyApp(ui, server)
 
 ```
 
-Puedes encontrar íconos en el siguiente link [link](https://fontawesome.com/v4.7.0/icons/), y temas [aquí](https://bootswatch.com/).
+Puedes encontrar íconos en el siguiente link [link](https://fontawesome.com/v4.7.0/icons/), y temas [aquí](https://bootswatch.com/), que resalten tus dashboards.
