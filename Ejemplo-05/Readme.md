@@ -1,4 +1,4 @@
-# Ejemplo 5
+# Ejemplo 5. Dashboard de tipo profesional
 
 #### Objetivo
 - Generar un dashboard interactivo que tenga una presentación profesional y que pueda interactur con varias variables
@@ -147,3 +147,5 @@ library(ggplot2)
 shinyApp(ui, server)
 
 ```
+
+Puedes encontrar íconos en el siguiente link [link](https://fontawesome.com/v4.7.0/icons/), y temas [aquí](https://bootswatch.com/).
