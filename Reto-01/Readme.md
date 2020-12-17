@@ -15,3 +15,5 @@ Basandote en los ejemplos genera el dashboard con el dataset de `iris` en el que
 - EL summary del dataset
 - La tabla del dataset 
 - Un data table del dataset en el que se muestren 10, 20 y 50 entradas por página
+
+Ajusta lo que se requiera para que obtengas el resultado deseado a los ejemplos de la sesión.
